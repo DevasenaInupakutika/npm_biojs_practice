@@ -1,0 +1,67 @@
+{
+  "name": "biojs-test-proj",
+  "description": "Biojs test component",
+  "version": "0.1.0",
+  "homepage": "https://github.com/DevasenaInupakutika/biojs-test-proj",
+  "author": {
+    "name": "Devasena Inupakutika",
+    "email": "devasena.prasad@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/DevasenaInupakutika/biojs-test-proj.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DevasenaInupakutika/biojs-test-proj/issues"
+  },
+  "licenses": [
+    {
+      "type": "Apache 2",
+      "url": "https://github.com/DevasenaInupakutika/biojs-test-proj/blob/master/LICENSE"
+    }
+  ],
+  "main": "index.js",
+  "scripts": { 
+    "test": "gulp", 
+	"build": "gulp build",
+    "build-browser": "gulp build-browser",
+	"build-browser-min": "gulp build-browser-gzip",
+	"prepublish": "gulp",
+	"sniper": "biojs-sniper .",
+    "watch": "gulp watch"
+  },
+  "dependencies": {},
+  "devDependencies": {
+	"biojs-sniper": "^0.0.7",  
+    "browserify": "5.x", 
+    "chai": "^1.9.1", 
+	"del": "^0.1.3",
+    "gulp": "^3.8.8",
+	"gulp-chmod": "^1.1.1", 
+    "gulp-gzip": "0.0.8", 
+    "gulp-jshint": "^1.8.4", 
+    "gulp-mocha": "^1.0.0", 
+    "gulp-mocha-phantomjs": "^0.5.0", 
+    "gulp-rename": "^1.2.0",
+	"gulp-streamify": "^0.0.5",
+    "gulp-uglify": "^1.0.1",
+	"gulp-util": "^3.0.1",
+    "gulp-watch": "^1.0.2",
+    "mkdirp": "^0.5.0", 
+    "mocha": "~1.20.1", 
+	"vinyl-source-stream": "^1.0.0",
+	"watchify": "^1.0.6"
+  }, 
+  "shields": {
+    "test": {
+      "img": "https://travis-ci.org/DevasenaInupakutika/biojs-test-proj.svg?branch=master",
+      "href": "https://travis-ci.org/DevasenaInupakutika/biojs-test-proj"
+    }
+  }, 
+  "sniper": {
+     "js": [ "/build/biojstestproj.js"],
+     "snippets": ["snippets"],
+     "first": "simple_example"
+   }, 
+  "keywords": ["test"," visualisation"," msa","biojs"]
+}
