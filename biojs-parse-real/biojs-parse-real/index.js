@@ -1,1 +1,1 @@
-module.exports = require("./lib/biojsparsereal");
+module.exports = require('./lib/index');

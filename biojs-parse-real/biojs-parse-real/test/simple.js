@@ -9,17 +9,21 @@ var testURL = 'http://an.url/'
 
 var scope = nock(testURL)
   .get('/list')
-  .replyWithFile(200, __dirname + '/test.file');
+  .replyWithFile(200, '/test.file');
 
   var dummyObj = [{name: "20", homo: 2, hetero: 1, del: 0},
 {name: "21", homo: 1, hetero: 1, del: 1}, 
 {name: "22", homo: 1, hetero: 1, del: 0 }];
 
 describe('Snipspector', function(){
+
+
   // do any init stuff here
   beforeEach(function(){
   });
   describe('parse', function(){
+
+
     it('should return match with default object', function(){
       var data = ["rs5747620	20	15412698	TT",
       "rs9605903	20	15434720	CC",
@@ -33,6 +37,7 @@ describe('Snipspector', function(){
     });
   });
   it('should work with live data', function(done){
+
     snip.read(testURL + "list", function(parsed){
       // the dummy file contains exactly this obj
       assert.deepEqual(parsed, dummyObj);
