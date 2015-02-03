@@ -21,6 +21,14 @@
   "bugs": {
     "url": "https://github.com/DevasenaInupakutika/npm_biojs_practice/issues"
   },
+
+  "shields": {
+    "test": {
+      "img": "https://travis-ci.org/greenify/biojs-vis-msa.svg?branch=master",
+      "href": "https://travis-ci.org/greenify/biojs-vis-msa"
+    },
+  },
+
   "homepage": "https://github.com/DevasenaInupakutika/npm_biojs_practice",
   "devDependencies": {
     "uglify-js": "~2.4.15",
@@ -28,5 +36,7 @@
     "browserify": "~5.11.0",
     "underscore": "~1.7.0"
   }
+
+  
 
 }

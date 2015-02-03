@@ -1,0 +1,10 @@
+<meta charset="utf-8">
+<script src="build/biojstestnew.js"></script>
+
+<div id=yourDiv></div>
+<script>
+var yourDiv = document.getElementById("yourDiv");
+var biojstestnew = require('biojs-test-new');
+var result = biojstestnew.hello('biojs');
+yourDiv.textContent = result;
+</script>

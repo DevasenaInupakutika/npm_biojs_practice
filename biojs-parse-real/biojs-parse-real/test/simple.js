@@ -38,7 +38,7 @@ describe('Snipspector', function(){
   });
   it('should work with live data', function(done){
 
-    snip.read(testURL + "list", function(parsed){
+      snip.read(testURL + 'list', function(parsed){
       // the dummy file contains exactly this obj
       assert.deepEqual(parsed, dummyObj);
       done(); // you need to call the done callback to resume mocha
